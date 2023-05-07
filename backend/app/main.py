@@ -44,3 +44,5 @@ app.include_router(student_router, tags=["students"])
 app.include_router(teacher_router, tags=["teachers"])
 app.include_router(year_router, tags=["years"])
 app.include_router(record_router, tags=["records"])
+
+"commit"
