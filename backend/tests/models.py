@@ -1,0 +1,105 @@
+from app.models import StudentCreate, StudentPatch, TeacherCreate, TeacherPatch, YearCreate, YearPatch
+
+USER_CREATE = "00000000-33b6-4b04-9dfb-b809a8561a4b"
+
+TEACHER_CREATE_EMAIL = "teacher@test.com"
+TEACHER_CREATE_FIRST_NAME = "test"
+TEACHER_CREATE_LAST_NAME = "test"
+TEACHER_CREATE_MIDDLE_NAME = "test"
+TEACHER_CREATE_ROLE = "teacher"
+TEACHER_CREATE_DEPARTAMENT = "test"
+TEACHER_CREATE_POSITION = "test"
+TEACHER_CREATE_PASSWORD = "test"
+TEACHER_CREATE = TeacherCreate(
+    email=TEACHER_CREATE_EMAIL,
+    first_name=TEACHER_CREATE_FIRST_NAME,
+    last_name=TEACHER_CREATE_LAST_NAME,
+    middle_name=TEACHER_CREATE_MIDDLE_NAME,
+    role=TEACHER_CREATE_ROLE,
+    departament=TEACHER_CREATE_DEPARTAMENT,
+    position=TEACHER_CREATE_POSITION,
+    password=TEACHER_CREATE_PASSWORD,
+)
+
+TEACHER_PUT_EMAIL = "put@test.com"
+TEACHER_PUT_FIRST_NAME = "put"
+TEACHER_PUT_LAST_NAME = "put"
+TEACHER_PUT_MIDDLE_NAME = "put"
+TEACHER_PUT_ROLE = "teacher"
+TEACHER_PUT_DEPARTAMENT = "put"
+TEACHER_PUT_POSITION = "put"
+TEACHER_PUT_PASSWORD = "put"
+TEACHER_PUT = TeacherCreate(
+    email=TEACHER_PUT_EMAIL,
+    first_name=TEACHER_PUT_FIRST_NAME,
+    last_name=TEACHER_PUT_LAST_NAME,
+    middle_name=TEACHER_PUT_MIDDLE_NAME,
+    role=TEACHER_PUT_ROLE,
+    departament=TEACHER_PUT_DEPARTAMENT,
+    position=TEACHER_PUT_POSITION,
+    password=TEACHER_PUT_PASSWORD,
+)
+
+TEACHER_PATCH_EMAIL = "patch@test.com"
+TEACHER_PATCH = TeacherPatch(
+    email=TEACHER_PATCH_EMAIL,
+)
+
+
+STUDENT_CREATE_EMAIL = "student@test.com"
+STUDENT_CREATE_FIRST_NAME = "test"
+STUDENT_CREATE_LAST_NAME = "test"
+STUDENT_CREATE_MIDDLE_NAME = "test"
+STUDENT_CREATE_ROLE = "student"
+STUDENT_CREATE_GROUP = "test group"
+STUDENT_CREATE_COURSE = 2
+STUDENT_CREATE_PASSWORD = "test"
+STUDENT_CREATE = StudentCreate(
+    email=STUDENT_CREATE_EMAIL,
+    first_name=STUDENT_CREATE_FIRST_NAME,
+    last_name=STUDENT_CREATE_LAST_NAME,
+    middle_name=STUDENT_CREATE_MIDDLE_NAME,
+    role=STUDENT_CREATE_ROLE,
+    group=STUDENT_CREATE_GROUP,
+    course=STUDENT_CREATE_COURSE,
+    password=STUDENT_CREATE_PASSWORD,
+)
+
+STUDENT_PUT_EMAIL = "put@test.com"
+STUDENT_PUT_FIRST_NAME = "put"
+STUDENT_PUT_LAST_NAME = "put"
+STUDENT_PUT_MIDDLE_NAME = "put"
+STUDENT_PUT_ROLE = "teacher"
+STUDENT_PUT_GROUP = "put"
+STUDENT_PUT_COURSE = 3
+STUDENT_PUT_PASSWORD = "put"
+STUDENT_PUT = StudentCreate(
+    email=STUDENT_PUT_EMAIL,
+    first_name=STUDENT_PUT_FIRST_NAME,
+    last_name=STUDENT_PUT_LAST_NAME,
+    middle_name=STUDENT_PUT_MIDDLE_NAME,
+    role=STUDENT_PUT_ROLE,
+    group=STUDENT_PUT_GROUP,
+    course=STUDENT_PUT_COURSE,
+    password=STUDENT_PUT_PASSWORD,
+)
+
+STUDENT_PATCH_EMAIL = "patch@test.com"
+STUDENT_PATCH = StudentPatch(
+    email=STUDENT_PATCH_EMAIL,
+)
+
+YEAR_CREATE_NAME = "create"
+YEAR_CREATE = YearCreate(
+    name=YEAR_CREATE_NAME,
+)
+
+YEAR_PUT_NAME = "put"
+YEAR_PUT = YearCreate(
+    name=YEAR_PUT_NAME,
+)
+
+YEAR_PATCH_NAME = "patch"
+YEAR_PATCH = YearPatch(
+    name=YEAR_PATCH_NAME,
+)
